@@ -1,6 +1,6 @@
 # WhatsApp
 
-Messaging system with Actor per user using AKA Libery. 
+Messaging system with Actor per user using AKKA Libery. 
 In the first running of the Server (manager), we create a new Actor to handle manager requests. The manager responds only to new connections requests and creating new groups. 
 When establishing a new connection, we create a new actor for the user. Users can connect with a specific username if it's not already in use.    
 When a user creates a new group, he asks for the manager to create a new Actor under "system/manager" and saves a reference to the group for dispatch messages.
