@@ -5,7 +5,7 @@ In the first running of the Server (manager), we create a new Actor to handle ma
 When establishing a new connection, we create a new actor for the user. Users can connect with a specific username if it's not already in use.    
 When a user creates a new group, he asks for the manager to create a new Actor under "system/manager" and saves a reference to the group for dispatch messages.
 
-For send messages between users or group members, the sender asks from the manager the Actor ref of the target and sends him the Message *directly*.
+For send messages between users or group members, the sender asks from the manager the Actor ref of the target and sends him the Message directly.
 
 To wrap all the requests from a user to a user, a user to a group, and user to the manager, we create an abstract class named "Message." Message class contains only Final fields to ensure we didn't use mutations in our code. Every change in a Message object returns a new instance with the updated details.
 To specify the types of the optional messages and to organize our implementation, we use extended class of Message with appropriate names and fields.  
