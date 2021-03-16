@@ -1,16 +1,5 @@
-Editors:
-Yana Orhov - 321112591
-Yishay Nadav - 312419328
 
 
-to build the the project open Terminal in project directory and run:
-mvn clean install
-
-to run Server:
-mvn exec:java -Dexec.mainClass="whatsApp.server.ServerRunner"
-
-to run User:
-mvn exec:java -Dexec.mainClass="whatsApp.client.UserRunner"
 
 
 
